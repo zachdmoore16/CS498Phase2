@@ -13,7 +13,7 @@ router.get('/', function (req, res, next) {
 /* POST login page */
 router.post('/', (req, res, next) => {
 	// hard coded username and password
-	if (req.body.username === 'user' && req.body.password === 'password') {
+	if (req.body.username === 'user' && req.body.password === 'password' && user_lib(req.body.username)) {
 		res.redirect(302, '/course/')
 	} else {
 		res.redirect(302, '/login/')
