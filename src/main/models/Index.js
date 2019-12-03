@@ -17,3 +17,18 @@ window.onload=function setBar() {
     }
 }
 
+
+function goBack() {
+    window.history.back();
+}
+
+//creating hover text boxes on the classes called "material-icons" help(?)
+function hover(x){
+    x.style.visibility= "visible";
+    x.style.opacity= 1;
+ }
+
+ function notHover(x){
+    x.style.visibility= "hidden";
+    x.style.opacity= 0;
+ }
