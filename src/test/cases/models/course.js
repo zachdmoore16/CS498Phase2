@@ -34,4 +34,5 @@ describe('Model - Course', () => {
 
 	})
 
+
 })

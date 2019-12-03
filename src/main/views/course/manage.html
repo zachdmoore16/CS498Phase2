@@ -73,10 +73,18 @@
 					</tr>
 					{{/evaluations}}
 				</table>
-				<input type="submit" />
+				<input type="submit" />	
+				<button onclick="location.href = '/course/';">Back</button>	
 			</form>
 		</div>
 		{{/artifacts}}
 		{{/student_learning_outcomes}}
 	</div>
+	
 </section>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
