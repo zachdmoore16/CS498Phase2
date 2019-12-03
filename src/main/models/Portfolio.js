@@ -25,6 +25,7 @@ class Portfolio extends Model {
         pii: { type: 'integer' },
         grades: { type: 'integer' },
         description: { type: 'string' },
+        monthCreated: { type: 'integer'} //integers 1 through 12 are valid
       }
     };
   }

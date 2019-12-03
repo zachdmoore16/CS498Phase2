@@ -24,7 +24,8 @@ describe('Lib - Portfolio', () => {
                     id: 1,
                     pii: 1,
                     grades: 1,
-                    description: 'lorem ipsum'
+                    description: 'lorem ipsum',
+                    monthCreated: 1
                 })
             })
 
@@ -47,7 +48,8 @@ describe('Lib - Portfolio', () => {
                     id: 1,
                     pii: 0,
                     grades: 0,
-                    description: 'lorem ipsum'
+                    description: 'lorem ipsum',
+                    monthCreated: 1
                 })
             })
 

@@ -12,7 +12,7 @@ describe('Lib - Portfolio', () => {
             sandbox.restore()
         })
 
-        it('returns true when no pii is contained within the portfolio', async () => {
+        it('returns true when pii is contained within the portfolio', async () => {
             //Arrange
             const Portfolio = require('../../../main/models/Portfolio')
 
@@ -24,7 +24,8 @@ describe('Lib - Portfolio', () => {
                     id: 1,
                     pii: 1,
                     grades: 1,
-                    description: 'lorem ipsum'
+                    description: 'lorem ipsum',
+                    monthCreated: 1
                 })
             })
 
@@ -35,7 +36,7 @@ describe('Lib - Portfolio', () => {
             expect(result).to.true
         })
 
-        it('returns false when pii is contained within the portfolio', async () => {
+        it('returns false when pii is not contained within the portfolio', async () => {
             //Arrange
             const Portfolio = require('../../../main/models/Portfolio')
 
@@ -47,7 +48,8 @@ describe('Lib - Portfolio', () => {
                     id: 1,
                     pii: 0,
                     grades: 0,
-                    description: 'lorem ipsum'
+                    description: 'lorem ipsum',
+                    monthCreated: 1
                 })
             })
 
